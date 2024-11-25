@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <!-- CSS LINK -->
+     <link rel="stylesheet" href="style.css">
+   
+
+    <!-- BOXICON LINK -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- FONT AWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="upper-nav">
+
+
+            <!-- UPPER RIGHT HEADER  -->
+            <div class="upper-right-nav">
+
+                <ul class="upper-right-nav-links">
+                    <li> WELCOME TO J. </li>
+                    <li><a href="#"> SIGN IN </a></li>
+                    <li><a href="#"> <img
+                                src="https://www.junaidjamshed.com/static/version1724493823/frontend/Rltsquare/junaidjamshed/en_US/Magento_Theme/images/pak-flag.png"
+                                alt="" onclick="openCountryModal()"> </a></li>
+                    <li><a href="#"> TRACKING INFO </a></li>
+                    <li><a href="#"> COPRATE INQUIRY </a></li>
+
+                    <!-- CURRENCY DROPDOWN  -->
+                    <li class="currency-dropdown">
+                        <a href="#" onclick="currencydropdownopen()">PKR <i
+                                class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                        <ul class="currency-dropdown-option" id="currency-options">
+                            <li><img src="https://www.junaidjamshed.com/static/version1730840781/frontend/Rltsquare/junaidjamshed/en_US/Magento_Theme/images/AUD.png"
+                                    width="20" height="15"> AUD</li>
+                            <li><img src="https://www.junaidjamshed.com/static/version1730840781/frontend/Rltsquare/junaidjamshed/en_US/Magento_Theme/images/GBP.png"
+                                    width="20" height="15"> GBP</li>
+                            <li><img src="https://www.junaidjamshed.com/static/version1730840781/frontend/Rltsquare/junaidjamshed/en_US/Magento_Theme/images/GBP.png"
+                                    width="20" height="15"> CAD</li>
+                            <li><img src="https://www.junaidjamshed.com/static/version1730840781/frontend/Rltsquare/junaidjamshed/en_US/Magento_Theme/images/EUR.png"
+                                    width="20" height="15"> EUR</li>
+                            <li><img src="https://www.junaidjamshed.com/static/version1730840781/frontend/Rltsquare/junaidjamshed/en_US/Magento_Theme/images/INR.png"
+                                    width="20" height="15"> INR</li>
+                            <li><img src="https://www.junaidjamshed.com/static/version1730840781/frontend/Rltsquare/junaidjamshed/en_US/Magento_Theme/images/JPY.png"
+                                    width="20" height="15"> JPY</li>
+                            <li><img src="https://www.junaidjamshed.com/static/version1730840781/frontend/Rltsquare/junaidjamshed/en_US/Magento_Theme/images/SAR.png"
+                                    width="20" height="15"> SAR</li>
+                            <li><img src="https://www.junaidjamshed.com/static/version1730840781/frontend/Rltsquare/junaidjamshed/en_US/Magento_Theme/images/SEK.png"
+                                    width="20" height="15"> SEK</li>
+                            <li><img src="https://www.junaidjamshed.com/static/version1730840781/frontend/Rltsquare/junaidjamshed/en_US/Magento_Theme/images/CHF.png"
+                                    width="20" height="15"> CHF</li>
+                            <li><img src="https://www.junaidjamshed.com/static/version1730840781/frontend/Rltsquare/junaidjamshed/en_US/Magento_Theme/images/USD.png"
+                                    width="20" height="15"> USD</li>
+                            <li><img src="https://www.junaidjamshed.com/static/version1730840781/frontend/Rltsquare/junaidjamshed/en_US/Magento_Theme/images/AED.png"
+                                    width="20" height="15"> AED</li>
+                        </ul>
+                    </li>
+                    <!-- CURRENCY DROPDOWN END  -->
+
+                </ul>
+
+
+                <!-- COUNTRY MODAL  -->
+                <div class="close-select-country" onclick="closeCountryModal()"> <i class='bx bx-x'></i> </div>
+                <div class="select-country">
+
+                    <h1> CHOOSE YOUR <br> SHIPPING DESTINATION </h1>
+
+                    <div class="select-country-dropdown">
+                        <select id="countrySelect">
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Australia">Australia</option>
+                            <option value="New Zealand">New Zealand</option>
+                            <option value="Canada">Canada</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="United States">United States</option>
+                            <option value="South Africa">South Africa</option>
+                            <option value="Rest of the World">Rest of the World</option>
+                        </select>
+                    </div>
+
+                </div>
+                <!-- COUNTRY MODAL END -->
+
+            </div>
+            <!-- UPPER RIGHT HEADER END  -->
+
+
+            <!-- UPPER LEFT HEADER -->
+            <div class="upper-left-nav">
+
+                <ul class="upper-left-nav-links">
+                    <li><a href="#"><i class='bx bxs-cart cart'></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i> SEARCH </a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="middle-nav">
+            <div class="middle-nav-heading">
+                <img src="https://www.junaidjamshed.com/media/logo/stores/1/new_logo.png" alt="">
+            </div>
+        </div>
+        <!-- UPPER LEFT HEADER END -->
+
+    </header>
+    <!-- HEADER END -->
+
+
+    <!-- NAVBAR STARTS -->
+
+
+    <nav class="lower-navbar">
+
+        <ul class="lower-navbar-links">
+
+
+            <li>
+                <a href="#">NEW ARRIVALS</a>
+
+                <!-- NEW-ARRIVAL DROPDOWN -->
+
+                <div class="new-arrival-dropdown">
+
+                    <div class="new-arrival-dropdown-content">
+
+                        <div class="new-arrival-row1">
+                            <header class="active"> Featured Collection </header>
+
+                            <ul class="new-arrival-dropdown-links">
+                                <li><a href="#"> Rasm-e-Dholki </a></li>
+                                <li><a href="#"> Vibe Tribe </a></li>
+                                <li><a href="#"> Brunch edit '24 </a></li>
+                                <li><a href="#"> Baharain - Women Unstitched </a></li>
+                                <li><a href="#"> Expression Series - All Ages of Him </a></li>
+                                <li><a href="#"> Matching Separates </a></li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="new-arrival-row1">
+                            <header> Women - Winter Tales '24 </header>
+
+                            <ul class="new-arrival-dropdown-links">
+                                <li><a href="#"> Unstitched Collection </a></li>
+                                <li><a href="#"> Pretwear Collection </a></li>
+                                <li><a href="#"> Kurti Collection </a></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="new-arrival-row1">
+                            <header> Boys & Girls - Winter Tales '24 </header>
+
+                            <ul class="new-arrival-dropdown-links">
+                                <li><a href="#">Teen Girls </a></li>
+                                <li><a href="#"> Teen Boys </a></li>
+                                <li><a href="#"> Kid Girls </a></li>
+                                <li><a href="#"> Kid Boys </a></li>
+                                <li><a href="#"> Infant Girls </a></li>
+                                <li><a href="#"> Infant Boys </a></li>
+                            </ul>
+
+                        </div>
+
+
+                        <div class="new-arrival-row1">
+                            <header> Mens - Winter Tales '24 </header>
+
+                            <ul class="new-arrival-dropdown-links">
+                                <li><a href="#">Kameez Shalwar Collection </a></li>
+                                <li><a href="#"> Kurta Collection </a></li>
+                                <li><a href="#"> Waistcoat Collection </a></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="new-arrival-row1">
+                            <img src="https://www.junaidjamshed.com/media/wysiwyg/dholki.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- NEW-ARRIVAL DROPDOWN END -->
+
+            </li>
+
+
+            <li>
+                <!-- CREW LOGO  -->
+                <a href="#"><img
+                        src="https://www.junaidjamshed.com/static/version1730840781/frontend/Rltsquare/junaidjamshed/en_US/images/cast-and-crew-logo.svg"
+                        alt=""><span class="crew-logo">cast & crew</span></a>
+
+                <!-- CREW LOGO DROPDOWN -->
+
+                <div class="crew-logo-dropdown">
+
+                    <div class="crew-logo-dropdown-content">
+
+                        <div class="crew-logo-row1">
+                            <header> MEN </header>
+
+                            <ul class="crew-logo-dropdown-links">
+                                <li><a href="#"> Kameez Shalwar </a></li>
+                                <li><a href="#"> Kurta Trouser </a></li>
+                                <li><a href="#"> Waistcoat </a></li>
+                                <li><a href="#"> Shawl </a></li>
+                                <li><a href="#"> Unstitched </a></li>
+                                <li><a href="#"> Footwear </a></li>
+                            </ul>
+
+                        </div>
+
+
+                        <div class="crew-logo-row1">
+                            <img src="https://www.junaidjamshed.com/media/wysiwyg/c_c-01.jpg" alt="" width="620"
+                                height="260">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- CREW LOGO DROPDOWN END -->
+
+            </li>
+
+
+            <li>
+                <a href="#">WOMEN</a>
+
+                <!-- WOMEN DROPDOWN  -->
+
+                <div class="women-dropdown">
+
+                    <div class="women-dropdown-content">
+
+                        <div class="women-row1">
+                            <img src="https://www.junaidjamshed.com/media/wysiwyg/khaddar01.jpg" alt="">
+                        </div>
+
+                        <div class="women-row1">
+                            <header> MAMA & ME </header>
+                            <header> KURTI </header>
+
+                            <ul class="women-dropdown-links">
+                                <li><a href="#"> FORMAL KURTI </a></li>
+                            </ul>
+
+                            <header> UN-STICHED </header>
+
+                            <ul class="women-dropdown-links">
+                                <li><a href="#"> 1 PEICE </a></li>
+                                <li><a href="#"> 2 PEICE </a></li>
+                                <li><a href="#"> 3 PEICE </a></li>
+                            </ul>
+
+                            <header> STICHED </header>
+
+                            <ul class="women-dropdown-links">
+                                <li><a href="#"> 2 PEICE </a></li>
+                                <li><a href="#"> 3 PEICE </a></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="women-row1">
+
+                            <header> FORMALS </header>
+
+                            <ul class="women-dropdown-links">
+                                <li><a href="#"> FORMAL STICHED </a></li>
+                                <li><a href="#"> FORMAL UNSTICHED </a></li>
+                            </ul>
+
+                            <header class="active2"> MATCHING SEPRATES </header>
+                            <header> NAERANG - Handwoven </header>
+                            <header> Modest Wear (Abaya) </header>
+                            <header> Saree </header>
+                            <header> Stoles-Shawls </header>
+
+
+                        </div>
+
+                        <div class="women-row1">
+
+                            <header> BOTTOMWEAR </header>
+                            <header> Prayer Mat </header>
+                            <header> Bags </header>
+                            <header class="active3"> Jewellery </header>
+                            <header> Footwear </header>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <!-- WOMEN DROPDOWN END  -->
+
+            </li>
+
+
+            <li>
+                <a href="#">MEN</a>
+
+                <!-- MEN DROPDOWN  -->
+
+                <div class="men-dropdown">
+
+                    <div class="men-dropdown-content">
+
+                        <div class="men-row1">
+                            <img src="https://www.junaidjamshed.com/media/wysiwyg/kurta-12.jpg" alt="">
+                        </div>
+
+                        <div class="men-row1">
+                            <header> Kameez Shalwar & Waistcoat </header>
+                            <header> Kurta Pajama </header>
+                            <header> Kameez Shalwar </header>
+
+                            <ul>
+                                <li><a href="#"> Casual </a></li>
+                                <li><a href="#"> Semi-Formal </a></li>
+                                <li><a href="#"> Formal </a></li>
+                                <li><a href="#"> Exclusive </a></li>
+                            </ul>
+                        </div>
+
+                        <div class="men-row1">
+                            <header> Kurta </header>
+                            <ul>
+                                <li><a href="#"> Casual </a></li>
+                                <li><a href="#"> Semi-Formal </a></li>
+                                <li><a href="#"> Formal </a></li>
+                                <li><a href="#"> Formal Kurta </a></li>
+                            </ul>
+
+                            <header> Like Father Like Son </header>
+                            <header> Caps </header>
+                            <header> Waistcoat </header>
+                            <header> Pocket Square </header>
+                        </div>
+
+                        <div class="men-row1">
+                            <header> Shawl </header>
+                            <header> Unstitched Fabric </header>
+                            <ul>
+                                <li><a href="#"> Platinum Class </a></li>
+                                <li><a href="#"> Gold Class </a></li>
+                                <li><a href="#"> Silver Class </a></li>
+                                <li><a href="#"> Boski </a></li>
+                                <li><a href="#"> Latha </a></li>
+                            </ul>
+
+                            <header> BOTTOM </header>
+                        </div>
+
+                        <div class="men-row1">
+                            <header> FOOTWEAR </header>
+                            <ul>
+                                <li><a href="#"> Embroidered </a></li>
+                                <li><a href="#"> Trendy </a></li>
+                            </ul>
+
+                            <header> UNDERWEAR </header>
+                            <ul>
+                                <li><a href="#"> Modal </a></li>
+                                <li><a href="#"> Cotton </a></li>
+                            </ul>
+
+                            <header> Grooms Collection </header>
+                            <ul>
+                                <li><a href="#"> Sherwani </a></li>
+                                <li><a href="#"> Turban </a></li>
+                                <li><a href="#"> Khussa </a></li>
+                                <li><a href="#"> Special Kurta </a></li>
+                                <li><a href="#"> Teen Boys </a></li>
+                                <li><a href="#"> Kid Boys </a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- MEN DROPDOWN END -->
+
+            </li>
+
+
+            <li>
+                <a href="#">BOYS & GIRLS</a>
+
+                <!-- BOYS & GIRLS DROPDOWN -->
+
+                <div class="boysgirls-dropdown">
+
+                    <div class="boysgirls-dropdown-content">
+
+
+                        <div class="boysgirls-row1">
+                            <header> Teen Girls </header>
+                            <ul>
+                                <li><a href="#"> Stitched Collection </a></li>
+                                <li><a href="#"> Formals </a></li>
+                                <li><a href="#"> Kurti </a></li>
+                            </ul>
+                        </div>
+
+                        <div class="boysgirls-row1">
+                            <header> Teen Boys </header>
+                            <ul>
+                                <li><a href="#"> Kameez Shalwar </a></li>
+                                <li><a href="#"> Kurta </a></li>
+                                <li><a href="#"> Bottomwear </a></li>
+                            </ul>
+                        </div>
+
+                        <div class="boysgirls-row1">
+                            <header> Kid Girls </header>
+                            <ul>
+                                <li><a href="#"> Stitched Collection </a></li>
+                                <li><a href="#"> Formals </a></li>
+                                <li><a href="#"> Kurti </a></li>
+                                <li><a href="#"> Trousers </a></li>
+                                <li><a href="#"> Footwear </a></li>
+                                <li><a href="#"> Jewelry </a></li>
+                            </ul>
+                        </div>
+
+                        <div class="boysgirls-row1">
+                            <header> Kid Boys </header>
+                            <ul>
+                                <li><a href="#"> Kameez Shalwar </a></li>
+                                <li><a href="#"> Kurta </a></li>
+                                <li><a href="#"> Kids Bottom </a></li>
+                            </ul>
+                        </div>
+
+                        <div class="boysgirls-row1">
+                            <header> Infant </header>
+                            <ul>
+                                <li><a href="#"> Infant Boys </a></li>
+                                <li><a href="#"> Infant Girls </a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- BOYS & GIRLS DROPDOWN END -->
+
+            </li>
+
+
+            <li>
+                <a href="#">FRAGRANCES</a>
+
+                <!-- FRAGRANCES DROPDOWN  -->
+
+                <div class="fragrances-dropdown">
+
+                    <div class="fragrances-dropdown-content">
+
+                        <div class="fragrances-row1">
+                            <img src="https://www.junaidjamshed.com/media/wysiwyg/deepblue.gif" alt="" width="258"
+                                height="401">
+                        </div>
+
+                        <div class="fragrances-row1">
+                            <header> For Men </header>
+                            <ul>
+                                <li><a href="#"> Perfume </a></li>
+                                <li><a href="#"> Gift Set </a></li>
+                                <li><a href="#"> Attar </a></li>
+                                <li><a href="#"> Body Spray </a></li>
+                            </ul>
+                        </div>
+
+                        <div class="fragrances-row1">
+                            <header> For Women </header>
+                            <ul>
+                                <li><a href="#"> Perfume </a></li>
+                                <li><a href="#"> Gift Set </a></li>
+                                <li><a href="#"> Body Spray </a></li>
+                            </ul>
+                        </div>
+
+                        <div class="fragrances-row1">
+                            <header> For KIDS </header>
+                        </div>
+
+                        <div class="fragrances-row1">
+                            <header> OTHERS </header>
+                            <ul>
+                                <li><a href="#"> Reed Diffuser </a></li>
+                                <li><a href="#"> Scented Candle </a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- FRAGRANCES DROPDOWN END  -->
+
+            </li>
+
+
+            <li>
+                <a href="#">MAKEUP</a>
+
+                <!-- MAKEUP DRPDOWN  -->
+
+                <div class="makeup-dropdown">
+                    <div class="makeup-dropdown-content">
+
+                        <div class="makeup-row1">
+                            <header> Face </header>
+                            <ul>
+                                <li><a href="#"> Cream & Foundation </a></li>
+                                <li><a href="#"> Concealer & Contour </a></li>
+                                <li><a href="#"> Face Powder </a></li>
+                                <li><a href="#"> Blush & Highlight </a></li>
+                            </ul>
+                        </div>
+
+                        <div class="makeup-row1">
+                            <header> Eyes </header>
+                            <ul>
+                                <li><a href="#"> Eye Liner & Mascara </a></li>
+                                <li><a href="#"> Eye Shadow </a></li>
+                                <li><a href="#"> Eye Pencil </a></li>
+                                <li><a href="#"> Eyebrow </a></li>
+                            </ul>
+                        </div>
+
+                        <div class="makeup-row1">
+                            <header> Lips </header>
+                            <ul>
+                                <li><a href="#"> Lip Pencil </a></li>
+                                <li><a href="#"> Lipstick </a></li>
+                                <li><a href="#"> Lip Gloss </a></li>
+                                <li><a href="#"> Lip Care </a></li>
+                            </ul>
+                        </div>
+
+                        <div class="makeup-row1">
+                            <header> MAKEUP ACCESSORIES </header>
+                            <ul>
+                                <li><a href="#"> Sponge & Blender </a></li>
+                                <li><a href="#"> Sharpener </a></li>
+                            </ul>
+                        </div>
+
+                        <div class="makeup-row1">
+                            <img src="https://www.junaidjamshed.com/media/wysiwyg/makeup.gif" alt="" width="240"
+                                height="401">
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- MAKEUP DRPDOWN END -->
+            </li>
+
+
+            <li><a href="#">CATALOGUE</a></li>
+
+            <li>
+                <a href="#">SALE</a>
+
+                <!-- SALE DRPDOWN -->
+
+                <div class="Sale-dropdown">
+
+                    <ul class="Sale-dropdown-content">
+                        <li><a href="#"> women unstiched </a></li>
+                        <li><a href="#"> women pretwear </a></li>
+                        <li><a href="#"> teen girls </a></li>
+                        <li><a href="#"> kids girls </a></li>
+                    </ul>
+
+                </div>
+
+                <!-- SALE DRPDOWN END -->
+
+            </li>
+
+        </ul>
+
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- Responsive Header  -->
+
+    <header class="responsive-header" id="responsive-header">
+
+        <div class="hamburger">
+            <i onclick="opensidebar()" class='bx bx-menu'></i>
+            <span>MENU</span>
+        </div>
+
+        <div class="j-logo">
+            <img src="https://www.junaidjamshed.com/media/logo/stores/1/new_logo.png" alt="">
+        </div>
+
+        <div class="responsive-search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span> Search </span>
+        </div>
+
+        <div class="responsive-cart-icon">
+            <i class='bx bxs-cart cart'></i>
+            <span> Cart </span>
+        </div>
+
+    </header>
+    <!-- RESPONSIVE HAEDER END -->
+
+    <!-- RESPONSIVE NAVBAR -->
+
+    <nav class="sidebar" id="sidebar">
+
+
+    <div class="sidebar-header">
+
+        <div class="menu-div">
+            <a href="#"> MENU </a>
+        </div>
+
+        <div class="account-div">
+            <a href="#"> ACCOUNT </a>
+        </div>
+        
+    </div>
+
+    <div class="close-sidebar">
+        <i onclick="closesidebar()" class='bx bx-x'></i>
+    </div>
+
+    <div class="sidebar-links">
+
+        <div class="link-1">
+            <a href="#"> NEW ARRIVALS </a> <img src="https://www.junaidjamshed.com/media/wysiwyg/Right_Arrow.png" alt="" class="arrow">
+        </div>
+
+        <div class="link-2">
+            <a href="#"><img
+                src="https://www.junaidjamshed.com/static/version1730840781/frontend/Rltsquare/junaidjamshed/en_US/images/cast-and-crew-logo.svg"
+                alt=""><span class="crew-logo">cast & crew</span></a> <img src="https://www.junaidjamshed.com/media/wysiwyg/Right_Arrow_1_.png" alt="" class="arrow">
+        </div>
+
+        <div class="link-3">
+            <a href="#"> WOMEN </a> <img src="https://www.junaidjamshed.com/media/wysiwyg/Right_Arrow.png" alt="" class="arrow">
+        </div>
+
+        <div class="link-4">
+            <a href="#"> MEN </a> <img src="https://www.junaidjamshed.com/media/wysiwyg/Right_Arrow.png" alt="" class="arrow">
+        </div>
+
+        <div class="link-5">
+            <a href="#"> BOYS & GIRLS </a> <img src="https://www.junaidjamshed.com/media/wysiwyg/Right_Arrow.png" alt="" class="arrow">
+        </div>
+
+        <div class="link-6">
+            <a href="#"> FRAGRANCES </a> <img src="https://www.junaidjamshed.com/media/wysiwyg/Right_Arrow.png" alt="" class="arrow">
+        </div>
+
+        <div class="link-7">
+            <a href="#"> MAKEUP </a> <img src="https://www.junaidjamshed.com/media/wysiwyg/Right_Arrow.png" alt="" class="arrow">
+        </div>
+
+        <div class="link-8">
+            <a href="#"> SALE </a> <img src="https://www.junaidjamshed.com/media/wysiwyg/Right_Arrow_1_.png" alt="" class="arrow">
+        </div>
+
+        <div class="link-9">
+            <a href="#"> CATALOGUE </a> <img src="https://www.junaidjamshed.com/media/wysiwyg/Right_Arrow.png" alt="" class="arrow">
+        </div>
+
+
+    </div>
+
+</nav>
+
+    <!-- HEROS SECTION VIDEO -->
+    <video class="hero-section-video"
+        src="https://www.junaidjamshed.com/media/weltpixel/owlcarouselslider/videos/home_banner_video_web.mp4" autoplay
+        loop muted>
+    </video>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

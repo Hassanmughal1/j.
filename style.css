@@ -1,0 +1,1221 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* HEADER CSS */
+.upper-nav {
+    width: 100%;
+    height: 40px;
+    background-color: #F3F3F3;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* UPPER RIGHT HEADER CSS */
+.upper-right-nav-links {
+    display: flex;
+    padding: 10px 60px;
+}
+
+.upper-right-nav li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 10px;
+    font-weight: lighter;
+    color: #000000;
+    letter-spacing: 1px;
+    font-family: "Alata", sans-serif;
+}
+
+
+.upper-right-nav li a {
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 10px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-family: "Alata", sans-serif;
+    color: #000000;
+}
+
+.upper-right-nav-links li a img {
+    width: 20px;
+    height: 15px;
+}
+
+.upper-right-nav-links li:nth-child(1):hover,
+.upper-right-nav-links li:nth-child(6) a:hover {
+    color: #868490;
+}
+
+.upper-right-nav-links li:nth-child(2) a:hover,
+.upper-right-nav-links li:nth-child(3) a:hover,
+.upper-right-nav-links li:nth-child(4) a:hover,
+.upper-right-nav-links li:nth-child(5) a:hover {
+    color: #868490;
+    text-decoration: underline;
+}
+
+.currency-dropdown {
+    position: relative;
+}
+
+.currency-dropdown a:hover {
+    color: #868490;
+    text-decoration: none;
+}
+
+.dropdown-arrow {
+    padding: 5px 10px;
+    transition: transform 0.3s ease-in;
+}
+
+.currency-dropdown-option {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 160px;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.currency-dropdown-option li {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.currency-dropdown-option li img {
+    width: 20px;
+    height: 15px;
+    margin-right: 2px;
+}
+
+.currency-dropdown-option li:hover {
+    background-color: #f0f0f0;
+}
+
+.close-select-country {
+    display: none;
+    margin-top: 180px;
+    margin-left: 950px;
+}
+
+.close-select-country i {
+    margin-left: 18px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.select-country {
+    display: none;
+    background-color: #fff;
+    width: 500px;
+    height: 400px;
+    margin-top: 0px;
+    margin-left: 500px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.select-country-dropdown select {
+    width: 70%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #000;
+    outline: none;
+}
+
+.select-country h1 {
+    margin-bottom: 20px;
+    padding-top: 50px;
+    letter-spacing: 1px;
+    line-height: 2;
+    font-family: "Alata", sans-serif;
+    font-weight: 200;
+}
+
+
+/* UPPER LEFT HEADER CSS */
+
+.upper-left-nav-links {
+    display: flex;
+    margin-top: 10px;
+    margin-right: 40px;
+    gap: 12px;
+}
+
+.upper-left-nav-links li {
+    list-style: none;
+}
+
+.upper-left-nav-links li a {
+    text-decoration: none;
+    font-size: 10px;
+    color: #000000;
+    font-family: "Alata", sans-serif;
+    letter-spacing: 1px;
+}
+
+.upper-left-nav-links li:nth-child(2) a:hover {
+    color: #868490;
+}
+
+.upper-left-nav-links .cart {
+    font-size: 35px;
+    margin-top: -5px;
+    margin-left: -30px;
+}
+
+.upper-left-nav-links .fa-magnifying-glass {
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+/* MIDDLE NAV J. LOGO CSS  */
+
+.middle-nav {
+    margin-left: 740px;
+    margin-top: 20px;
+}
+
+.middle-nav-heading img {
+    width: 42px;
+    height: 42px;
+}
+
+/* RESPONSIVE HEADER DISPLAY  */
+.responsive-header {
+    display: none;
+}
+
+/* NAVBAR CSS */
+.lower-navbar {
+    width: 100%;
+    height: 70px;
+    padding-top: 30px;
+    padding-left: 255px;
+}
+
+.lower-navbar ul {
+    display: flex;
+    gap: 35px;
+}
+
+.lower-navbar ul li {
+    list-style: none;
+}
+
+.lower-navbar ul li a {
+    color: rgb(48, 48, 48);
+    text-decoration: none;
+    font-family: Alata, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.lower-navbar-links li:nth-child(9) a {
+    color: red;
+    font-weight: 600;
+}
+
+.lower-navbar-links li:nth-child(9) a:hover {
+    color: black;
+    font-weight: 500;
+}
+
+.lower-navbar-links li:nth-child(1) a:hover,
+.lower-navbar-links li:nth-child(2) a:hover,
+.lower-navbar-links li:nth-child(3) a:hover,
+.lower-navbar-links li:nth-child(4) a:hover,
+.lower-navbar-links li:nth-child(5) a:hover,
+.lower-navbar-links li:nth-child(6) a:hover,
+.lower-navbar-links li:nth-child(7) a:hover,
+.lower-navbar-links li:nth-child(8) a:hover {
+    color: #0e1111 !important;
+    font-weight: 600;
+}
+
+.crew-logo {
+    display: none;
+}
+
+.lower-navbar-links li:nth-child(2) a img {
+    height: 35px;
+    margin-top: -10px;
+    border: 0px solid black;
+}
+
+/* NEW ARRIVAL DROPDOWN CSS */
+
+.lower-navbar-links li:hover .new-arrival-dropdown {
+    transition: all 0.3s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+
+.new-arrival-dropdown {
+    position: absolute;
+    top: 160px;
+    width: 100%;
+    height: 70%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.new-arrival-dropdown-content {
+    background-color: white;
+    padding: 25px 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.new-arrival-row1 {
+    line-height: 45px;
+    width: 480px;
+}
+
+.new-arrival-row1 header {
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: #ccc9c9;
+    text-decoration-thickness: 1.5px;
+    font-weight: 600;
+    color: rgb(87, 87, 87);
+    font-family: 'Alata', sans-serif;
+    margin-left: 35px;
+    transition: all 0.1s ease-in-out;
+}
+
+.new-arrival-row1 header:hover {
+    color: #000;
+}
+
+.new-arrival-row1 .active {
+    color: rgb(213, 37, 37);
+}
+
+.new-arrival-row1 ul {
+    display: block;
+    margin-left: 35px;
+    margin-top: 13px;
+    line-height: 30px;
+}
+
+.new-arrival-row1 ul li a {
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: rgb(119, 119, 119);
+    font-family: 'Alata', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 1px;
+}
+
+.new-arrival-row1 img {
+    margin-top: 20px;
+}
+
+
+/* CREW LOGO DROPDOWN CSS */
+.lower-navbar-links li:hover .crew-logo-dropdown {
+    transition: all 0.3s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+
+.crew-logo-dropdown {
+    position: absolute;
+    top: 160px;
+    width: 100%;
+    left: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.crew-logo-dropdown-content {
+    background-color: white;
+    padding: 25px 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.crew-logo-row1 {
+    line-height: 45px;
+    width: 480px;
+}
+
+.crew-logo-row1 header {
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: #ccc9c9;
+    text-decoration-thickness: 1.5px;
+    font-weight: 600;
+    color: rgb(87, 87, 87);
+    font-family: 'Alata', sans-serif;
+    transition: all 0.1s ease-in-out;
+    margin-left: 130px;
+}
+
+.crew-logo-row1 header:hover {
+    color: #000;
+}
+
+.crew-logo-row1 ul {
+    display: block;
+    margin-left: 130px;
+    line-height: 30px;
+}
+
+.crew-logo-dropdown-links li a {
+    color: rgb(119, 119, 119) !important;
+    font-size: 12px !important;
+    font-weight: 400;
+    font-family: 'Alata';
+    text-transform: uppercase;
+    line-height: 1px;
+}
+
+.crew-logo-row1 img {
+    margin-top: 40px;
+    margin-left: -250px;
+}
+
+/* WOMEN DROPDOWN CSS */
+.lower-navbar-links li:hover .women-dropdown {
+    transition: all 0.3s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+
+.women-dropdown {
+    position: absolute;
+    top: 160px;
+    width: 100%;
+    height: 70%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.women-dropdown-content {
+    background-color: white;
+    padding: 25px 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.women-row1 {
+    line-height: 45px;
+    width: 480px;
+}
+
+.women-row1 header {
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: #ccc9c9;
+    text-decoration-thickness: 1.5px;
+    font-weight: 600;
+    color: rgb(87, 87, 87);
+    font-family: 'Alata', sans-serif;
+    margin-left: 60px;
+    transition: all 0.1s ease-in-out;
+    line-height: 50px;
+}
+
+.women-row1 header:hover {
+    color: #000;
+}
+
+.women-row1 .active2 {
+    color: rgb(226, 23, 23);
+}
+
+.women-row1 .active3 {
+    color: #000;
+}
+
+
+.women-row1 ul {
+    display: block;
+    margin-left: 60px;
+    margin-top: 13px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+.women-row1 ul li a {
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: rgb(119, 119, 119);
+    font-family: 'Alata', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 1px;
+}
+
+.women-row1 img {
+    margin-top: 40px;
+    margin-left: 35px;
+}
+
+/* MEN DROPDOWN CSS */
+.lower-navbar-links li:hover .men-dropdown {
+    transition: all 0.3s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+
+.men-dropdown {
+    position: absolute;
+    top: 160px;
+    width: 100%;
+    height: 80%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.men-dropdown-content {
+    background-color: white;
+    padding: 25px 2px;
+    display: flex;
+    width: 100%;
+    height: 93%;
+    justify-content: space-between;
+}
+
+.men-row1 {
+    line-height: 45px;
+    width: 480px;
+}
+
+.men-row1 header {
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: #ccc9c9;
+    text-decoration-thickness: 1.5px;
+    font-weight: 600;
+    color: rgb(87, 87, 87);
+    font-family: 'Alata', sans-serif;
+    margin-left: 50px;
+    transition: all 0.1s ease-in-out;
+    line-height: 50px;
+}
+
+.men-row1 header:hover {
+    color: #000;
+}
+
+.men-row1 ul {
+    display: block;
+    margin-left: 50px;
+    margin-top: 13px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+.men-row1 ul li a {
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: rgb(119, 119, 119);
+    font-family: 'Alata', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 1px;
+}
+
+.men-row1 img {
+    margin-top: 25px;
+    margin-left: 55px;
+}
+
+/* BOYS & GIRLS DROPDOWN CSS */
+.lower-navbar-links li:hover .boysgirls-dropdown {
+    transition: all 0.3s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+
+.boysgirls-dropdown {
+    position: absolute;
+    top: 160px;
+    width: 100%;
+    height: 80%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.boysgirls-dropdown-content {
+    background-color: white;
+    padding: 25px 0px;
+    gap: 200px;
+    display: flex;
+    width: 100%;
+    height: 60%;
+    justify-content: center;
+}
+
+.boysgirls-row1 {
+    line-height: 45px;
+}
+
+.boysgirls-row1 header {
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: #ccc9c9;
+    text-decoration-thickness: 1.5px;
+    font-weight: 600;
+    color: rgb(87, 87, 87);
+    font-family: 'Alata', sans-serif;
+    transition: all 0.1s ease-in-out;
+    line-height: 50px;
+    margin-left: -100px;
+}
+
+.boysgirls-row1 header:hover {
+    color: #000;
+}
+
+.boysgirls-row1 ul {
+    display: block;
+    margin-top: 13px;
+    margin-bottom: 10px;
+    line-height: 30px;
+    margin-left: -100px;
+}
+
+.boysgirls-row1 ul li a {
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: rgb(119, 119, 119);
+    font-family: 'Alata', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 1px;
+}
+
+/* FRAGRANCES DROPDOWN CSS */
+.lower-navbar-links li:hover .fragrances-dropdown {
+    transition: all 0.3s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+
+.fragrances-dropdown {
+    position: absolute;
+    top: 160px;
+    width: 100%;
+    height: 52%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.fragrances-dropdown-content {
+    background-color: white;
+    padding: 25px 0px;
+    display: flex;
+    width: 100%;
+    gap: 220px;
+}
+
+.fragrances-row1 {
+    line-height: 45px;
+}
+
+.fragrances-row1 header {
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: #ccc9c9;
+    text-decoration-thickness: 1.5px;
+    font-weight: 600;
+    color: rgb(87, 87, 87);
+    font-family: 'Alata', sans-serif;
+    transition: all 0.1s ease-in-out;
+    line-height: 50px;
+    margin-left: -170px;
+}
+
+.fragrances-row1 header:hover {
+    color: #000;
+}
+
+.fragrances-row1 ul {
+    display: block;
+    margin-top: 13px;
+    margin-left: -170px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+.fragrances-row1 ul li a {
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: rgb(119, 119, 119);
+    font-family: 'Alata', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 1px;
+}
+
+.fragrances-row1 img {
+    margin-top: 30px;
+    margin-left: 140px;
+}
+
+/* MAKEUP DROPDOWN CSS */
+
+.lower-navbar-links li:hover .makeup-dropdown {
+    transition: all 0.3s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+
+.makeup-dropdown {
+    position: absolute;
+    top: 160px;
+    width: 100%;
+    height: 70%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.makeup-dropdown-content {
+    background-color: white;
+    padding: 25px 0px;
+    gap: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.makeup-row1 {
+    line-height: 45px;
+}
+
+.makeup-row1 header {
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: #ccc9c9;
+    text-decoration-thickness: 1.5px;
+    font-weight: 600;
+    color: rgb(87, 87, 87);
+    font-family: 'Alata', sans-serif;
+    margin-left: 65px;
+    transition: all 0.1s ease-in-out;
+}
+
+.makeup-row1 header:hover {
+    color: #000;
+}
+
+.makeup-row1 ul {
+    display: block;
+    margin-left: 65px;
+    margin-top: 13px;
+    line-height: 30px;
+}
+
+.makeup-row1 ul li a {
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: rgb(119, 119, 119);
+    font-family: 'Alata', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 1px;
+}
+
+.makeup-row1 img {
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+/* SALE DRPDOWN CSS */
+
+.lower-navbar-links li:hover .Sale-dropdown {
+    transition: all 0.3s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+
+.Sale-dropdown {
+    position: absolute;
+    top: 160px;
+    width: 220px;
+    height: 200px;
+    line-height: 45px;
+    opacity: 0;
+    visibility: hidden;
+    background-color: white;
+}
+
+.Sale-dropdown .Sale-dropdown-content {
+    display: block;
+    width: 100%;
+}
+
+.Sale-dropdown .Sale-dropdown-content li a {
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Alata';
+    color: rgb(119, 119, 119);
+}
+
+/* RESPONSIVE NAVBAR DISPLAY CSS  */
+
+.sidebar {
+    display: none;
+}
+
+
+/* HERO SECTION VIDEO CSS */
+.hero-section-video {
+    margin-top: 40px;
+    width: 100%;
+    padding: 15px;
+}
+
+/* MEDIA QUERY / RESPONSIVE FOR MOBILE  */
+@media screen and (max-width: 320px) {
+
+    /* HEADER RESPONSIVE ON MOBILE  */
+
+    .header {
+        display: none;
+    }
+
+    .responsive-header {
+        position: relative;
+        display: flex;
+        /* z-index: 500; */
+        overflow: hidden;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    .hamburger i {
+        font-size: 38px;
+        font-weight: lighter;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hamburger span {
+        font-size: 10px;
+        letter-spacing: 1px;
+        font-family: "inter", sans-serif;
+        margin-top: -4px;
+    }
+
+    .j-logo {
+        margin-top: 8px;
+        margin-left: 90px;
+    }
+
+    .j-logo img {
+        width: 40px;
+        height: 42px;
+    }
+
+    .responsive-search-icon {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-top: 12px;
+        padding-left: 50px;
+    }
+
+    .responsive-search-icon i {
+        font-size: 25px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .responsive-search-icon span {
+        font-size: 10px;
+        letter-spacing: 1px;
+        font-family: "Alata", sans-serif;
+        margin-top: 2px;
+    }
+
+    .responsive-cart-icon {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-top: 6px;
+        padding-left: 10px;
+    }
+
+    .responsive-cart-icon i {
+        font-size: 35px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .responsive-cart-icon span {
+        font-size: 11px;
+        letter-spacing: 1px;
+        font-family: "Alata", sans-serif;
+        margin-top: -2px;
+    }
+
+
+    /* NAVBAR BAR MOBILE RESPONSIVE  */
+
+    .lower-navbar {
+        display: none;
+    }
+
+    .sidebar {
+        position: fixed;
+        display: block;
+        background-color: white;
+        width: 260px;
+        top: 0;
+        margin-left: -100%;
+        margin-top: 0;
+        transition: margin-left 0.3s ease-in-out;
+        /* z-index: 1000; */
+    }
+
+    .sidebar-header {
+        display: flex;
+        background-color: white;
+    }
+
+    .menu-div {
+        text-align: center;
+        align-content: center;
+        width: 130px;
+        height: 80px;
+    }
+
+    .menu-div a {
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+        font-family: 'Alata';
+        letter-spacing: 1px;
+    }
+
+    .account-div {
+        text-align: center;
+        align-content: center;
+        width: 130px;
+        height: 80px;
+        background-color: #f7f7f7;
+    }
+
+    .account-div a {
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+        font-family: 'Alata';
+        letter-spacing: 1px;
+    }
+
+    .close-sidebar {
+        background-color: #424141;
+        width: 40px;
+        height: 40px;
+        align-content: center;
+        margin-left: 260px;
+        margin-top: -55px;
+    }
+
+    .close-sidebar i {
+        font-size: 40px;
+        color: white;
+    }
+
+    .link-1 {
+        margin-top: 45px;
+        height: 45px;
+        text-align: left;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .link-1 a {
+        text-decoration: none;
+        padding-left: 10px;
+        color: #000;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: 1px;
+    }
+
+    .link-1 img {
+        padding-left: 55px;
+    }
+
+    .link-2 {
+        background-color: #000;
+        padding-left: 10px;
+        height: 45px;
+        text-align: left;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .link-2 a img {
+        height: 20px;
+    }
+
+    .link-2 .arrow {
+        color: white;
+        padding-left: 132px;
+    }
+
+    .link-3 {
+        border-bottom: 1px solid #B1B1B1;
+        padding-left: 10px;
+        height: 45px;
+        text-align: left;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .link-3 a {
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: 1px;
+    }
+
+    .link-3 img {
+        padding-left: 130px;
+    }
+
+    .link-4 {
+        border-bottom: 1px solid #B1B1B1;
+        padding-left: 10px;
+        height: 45px;
+        text-align: left;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .link-4 a {
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: 1px;
+    }
+
+    .link-4 img {
+        padding-left: 170px;
+    }
+
+    .link-5 {
+        border-bottom: 1px solid #B1B1B1;
+        padding-left: 10px;
+        height: 45px;
+        text-align: left;
+        align-content: center;
+    }
+
+    .link-5 a {
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: 1px;
+    }
+
+    .link-5 img {
+        padding-left: 71px;
+    }
+
+    .link-6 {
+        border-bottom: 1px solid #B1B1B1;
+        padding-left: 10px;
+        height: 45px;
+        text-align: left;
+        align-content: center;
+    }
+
+    .link-6 a {
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: 1px;
+    }
+
+    .link-6 img {
+        padding-left: 75px;
+    }
+    
+    .link-7 {
+        border-bottom: 1px solid #B1B1B1;
+        padding-left: 10px;
+        height: 45px;
+        text-align: left;
+        align-content: center;
+    }
+
+    .link-7 a {
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: 1px;
+    }
+
+    .link-7 img {
+        padding-left: 125px;
+    }
+
+    .link-8 {
+        background-color: #A00015;
+        padding-left: 10px;
+        height: 45px;
+        text-align: left;
+        align-content: center;
+    }
+
+    .link-8 a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: 1px;
+    }
+
+    .link-8 img {
+        padding-left: 165px;
+    }
+
+    .link-9 {
+        border-bottom: 1px solid #B1B1B1;
+        padding-left: 10px;
+        height: 45px;
+        text-align: left;
+        align-content: center;
+    }
+
+    .link-9 a {
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: 1px;
+    }
+
+    .link-9 img {
+        padding-left: 90px;
+    }
+
+    .hero-section-video {
+       display: none;
+    }
+}
+
+/* 
+Add this to your existing CSS
+
+Ensure the sidebar is above the header
+.sidebar {
+    position: fixed; To keep it above the header and not affected by scroll
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; Fullscreen if necessary
+    background-color: white; Optional: Set a background
+    z-index: 1000; Ensure this is higher than your header's z-index
+    display: none; Hide initially
+    overflow-y: auto; Allow scrolling if content exceeds viewport
+}
+
+Ensure lower-navbar is below the sidebar
+.lower-navbar {
+    position: relative;
+    z-index: 500; Must be lower than .sidebar
+}
+
+Example styling for showing the sidebar
+.sidebar.active {
+    display: block; Show the sidebar when active
+}
+
+Sidebar close button styling
+.close-sidebar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+ 
